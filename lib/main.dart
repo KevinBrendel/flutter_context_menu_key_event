@@ -50,7 +50,7 @@ class MainApp extends StatelessWidget {
               InkWell(
                 onTapDown: (details) {
                   print("tap down");
-                  Future.delayed(const Duration(seconds: 1)).then((_) async {
+                  Future.delayed(const Duration(milliseconds: 500)).then((_) async {
                     print(await channel.invokeMethod(
                       "openMenu",
                       {
